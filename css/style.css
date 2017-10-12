@@ -1,0 +1,1498 @@
+/***********TEMPLATE FOR EFFIE SITE LAYOUT***********/
+*{
+	margin :0;
+	padding:0;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin-left:  0; 
+    padding-left: 0;
+    overflow-x: hidden;
+}
+body{
+	background-color: #FBF9ED;
+	text-align: center;
+	font-family: "Helvetica Neue";
+	max-width: 1920px;
+	width: 100%;
+    height: 100%;
+}
+.overlay{
+	visibility: hidden;
+}
+span{
+	visibility: hidden;
+}
+.arrow{
+	visibility: initial;
+}
+				/*ADDING FONT TYPES*/
+@font-face{
+	font-family: "Helvetica Neue";
+	src:url("../fonts/HelveticaNeue.ttf");
+}
+@font-face{
+	font-family: "Catamaran-black";
+	src:url("../fonts/Catamaran-black.ttf");
+}
+@font-face{
+	font-family: "bodoni seventytwo";
+	src:url("../fonts/bodoni.ttf");
+}
+@font-face{
+	font-family: "Helvetica Neue Bold";
+	src:url("../fonts/HelveticaNeueBold.ttf");
+}
+@font-face{
+	font-family: "Helvetica Neue Light";
+	src:url("../fonts/HelveticaNeueLight.ttf");
+}
+				/*SOCIAL MEDIA ICONS*/
+#socialmedia{
+	clear: both;
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 0 20px 0 20px;
+}
+#icons{
+	padding-right: 45px;
+}
+
+#icons li{
+	display: inline;
+	float:right;
+	padding-top: 10px;
+	padding-right: 10px;
+
+}
+
+#icons li img{
+	width: 30px;
+	height: 30px;
+}
+#icons #fb{
+	width: 36px;
+	height: 36px;
+
+}
+#icons #ig{
+	width: 35px;
+	height: 35px;
+	padding-top: 1px;
+}
+#icons #twit{
+	width: 36px;
+	height: 36px;
+}
+#icons #yelp{  
+	width: 31px;
+	height: 31px;
+	padding-top: 3px;
+}
+#icons #email{
+	width: 33px;
+	height: 33px;
+	padding-top: 1.5px;
+}
+#icons #phone{
+	width:31px;
+	height: 31px;
+	padding-top: 3.2px;
+}
+			/********LOGO AND SITE TITLE*******/
+#nav figure img{
+	float:left;
+	width: 131px;
+	height:145px;
+	padding-left: 70px;
+	padding-top: 20px;
+}
+#nav figcaption p.smGray{
+	font-family: "Helvetica Neue Light";
+	padding-top: 50px;
+	margin-left: 230px;
+	color: #95989A;
+	font-size: 2em;
+	font-weight: 900;
+	text-align: left;
+	letter-spacing: 1px;
+
+}
+#nav figcaption p.bigBurg{
+	margin-left: 230px;
+	color: #4D0013;
+	font-size: 3em;
+	font-family: "Helvetica Neue Bold";
+	font-weight: 900;
+	text-align: left;
+}
+					/* NAVIGATION BAR*/
+nav{
+	font-size: 18pt;
+	max-width: 800px;
+	padding:0px 60px 0px 0;
+	float: right;
+	font-family: Helvetica;
+	font-weight: bold;
+}
+nav li{
+	display:inline;
+	text-align: right;
+	padding-left: 30px;
+}
+nav li a{
+	color:#4D0013;
+	text-decoration: none;
+	font-weight: bold;
+}
+nav li a:hover{
+	color:#95989A;
+}
+
+
+.menu > ul > li {
+    display:inline-block;
+    position:relative;
+}
+
+.arrow {
+    font-size:21px;
+    line-height:0%;
+    padding-left: .5%;
+}
+
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+ .sub-menu {
+    width:130%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#FBF9ED;
+}
+
+.sub-menu li {
+    display:block;
+    font-size:16px;
+    padding: 0;
+}
+
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+    text-align: left;
+}
+
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:#3e3436;
+    color:white;
+}
+
+
+				/*TOP SECTION OF PAGE*/
+#top{
+	display: block;
+	clear: both;
+	background-image: url(../images/welcome.png);
+	
+	width: 100%;
+	height: 350px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+.withbio{
+	
+	display: inline-block;
+	clear: both;
+	width: 90%;
+}
+#context{
+	display: inline-block;
+	text-align: center;
+	width: 80%;
+	color: white;
+	padding-top: 10px; 
+	margin-right: 5%;
+}
+
+
+
+
+/*WE WILL TWEAK THE MAIN TEXT ACCORDING TO TEXT ENTERED*/
+#top h1{
+	font-family: "bodoni seventytwo";
+	font-size: 5em;
+	font-weight: lighter;
+	text-shadow: 1px 1px 1px black;
+	padding-top: 100px;
+	padding-left: 10%;
+}
+#top p{
+	font-family: "Helvetica";
+	font-weight: lighter;
+	font-size: 1.5em;
+	padding-top: 0px;	
+	line-height: 1.5em;
+}
+
+#context .h1cont{
+	margin:0;
+	padding-top: 20px;
+	padding-left: 10%;
+}
+#context .pcont{
+	padding-bottom: 50px;
+	padding-left: 10%;
+}
+
+
+/*-------------- GRANITE SECTION -----------*/
+#gallery{
+	width: 100%;
+	text-align: center;
+	padding-left: 5%;
+	padding-top: 2%;
+}
+
+#granite, #headstone, #photos, 
+#bronzemarker, #flat-granite, #petburial, #benches{
+	background-color: #F2F0E3;
+	width: 90%;
+	height: auto;
+	padding-top:20px;
+	margin-bottom: 1%;
+	text-align: center;
+}
+
+
+#granite h1, #gallery h1, #headstone h1, #photos h1,
+#bronzemarker h1, #flat-granite h1, #petburial h1, #benches h1{
+	font-family: Helvetica;
+	font-size: 4em;
+	color: #4D0013;
+	text-align: center;
+	border-bottom: solid 1px #A2A5A4;
+	padding-top: 2%;
+	margin-bottom: 40px;
+}
+
+
+#granite figure, #headstone figure, #photos figure, 
+#bronzemarker figure, #flat-granite figure, #benches figure {
+	display:inline-block;
+    margin:auto;
+    text-align: left;
+    width: 30%;
+ }
+ #petburial figure{
+ 	width:70%;
+ 	display: inline-block;
+ }
+ #petburial p{
+ 	padding-bottom: 50px;
+ 	font-size: 1.4em;
+ }
+ #petburial h1{
+ 	text-align: center;
+ }
+ #petburial img{
+ 	max-height: 500px;
+ 	padding-bottom: 20px;
+ 	
+ }
+ #granite figure img, #headstone img, #photos img, 
+ #bronzemarker img, #flat-granite img, #benches img{
+	float:left;
+	width: 80%;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	padding-left: 10%;
+ }
+
+
+ #granite figure figcaption, #headstone figure figcaption, #photos figure figcaption,
+ #bronzemarker figure figcaption, #flat-granite figure figcaption, #petburial figure figcaption,
+ #benches figure figcaption{
+ 	text-align: center;
+  	font-size: 1.6em;
+	font-family: Helvetica;
+  	font-weight: 550;
+  	padding-bottom: 20px;
+  	width: 80%;
+  	padding-left: 10%;
+ }
+
+#quotes{
+	background-color: #F2F0E3;
+	text-align: center;
+	display: block;
+	clear:both;
+	width: 100%;
+
+	padding-bottom: 30px;
+}
+#quotes h1{
+	padding-top: 20px;
+	color: #4D0013;
+	text-align: center;
+	padding-bottom: 10px;
+	border-top: 1px solid black;
+	font-family: "Bodoni seventytwo";
+	
+
+}
+#abovequotes{
+	width: 50%;
+	padding-left: 25%;
+	text-align: center;
+}
+#quote1{
+	padding-left: 2%;
+	display: inline-block;
+	width: 26%;
+	float:left;
+}
+#quote2{
+	display: inline-block;
+	width: 26%;
+	padding-top: 20px;
+	
+}
+#quote3{
+	display: inline-block;
+	width: 26%;
+	float:right;
+	padding-right: 2%;
+}
+#quote2 .bqstart{
+	padding-bottom: 15px;
+}
+#quote3 .bqend{
+	margin-left: -20px;
+	margin-top: -40px;
+}
+blockquote{
+	width:100%;
+	margin-right: 70%;
+}
+blockquote #gerrie{
+	width: 100%;
+	display: inline-block;
+	margin-bottom: -50px;
+
+}
+blockquote #jesus{
+	width: 100%;
+	display: inline-block;
+}
+blockquote #debbie{
+	width: 100%;
+	display: inline-block;
+	float:right;
+
+}
+
+.bqstart {
+    float:left;
+    font-size: 500%;
+	font-family: sans-serif;
+    color:black;
+    margin-bottom: -70px;
+    margin-left: -20px;
+ }
+
+
+ .bqend {
+ 	float:right;
+    font-size: 500%;
+    font-family: sans-serif;
+    color:black;
+    margin-top: -30px;
+    margin-left: -25px;
+ }
+#quotes p{
+	color: #A2A5A4;
+}
+
+#gerrie{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	font-family: "helvetica";
+}
+
+#jesus{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	font-family: "helvetica";
+}
+
+#debbie{
+	display: inline-block;
+	text-align: center;
+	font-family: "helvetica";
+	padding-top: 10px;
+	width: 100%;
+}
+
+#locations{
+	display: block;
+	clear: both;
+	border-top: 1px solid black;
+}
+
+#wrapper aside h1{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #4D0013;
+	font-family: "Bodoni seventytwo";
+}
+
+#harlem-list{
+	font-size: 20px;
+	color: #A2A5A4;	
+	padding-left: 10px;
+}
+
+#queens-list{
+	font-size: 20px;
+	color: #A2A5A4;
+	padding-right: 10px;
+	margin-bottom: 20px;
+}
+#locations li {
+	color: #A2A5A4;
+	font-size: 14px;
+	padding-right: 1%;
+	padding-left: 0;
+}
+#locations b{
+	font-family: Helvetica;
+}
+
+#wrapper #hb, #wrapper strong{
+	font-family: "Bodoni seventytwo";
+	font-weight: 999;
+	color:#4D0013;
+}
+
+#harlem {
+	text-align: right;
+	padding: 0;
+	margin: 0;
+	color: #4D0013;
+	font-size: 13px;
+}
+
+#queens {
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	color: #4D0013;
+	font-size: 13px;
+}
+
+
+iframe{
+	padding-bottom: 20px;
+}
+
+
+
+
+
+#form{
+	width: 80%;
+	margin:30px 10% 30px 10%;
+	height: 600px;
+	text-align: center;
+	border-radius: 5px;
+    background-color: #F2F0E3;
+    padding: 20px;
+}
+
+#form h1{
+	font-size: 4em;
+	font-family: Helvetica;
+	font-weight: bold;
+	color:#4D0013;
+	padding-top: 10px;
+	text-align: left;
+	border-width: 80%;
+	padding-bottom:5px; 
+	border-bottom:1px solid grey;
+}
+#form1{
+	padding-top: 0;
+	
+}
+
+label{
+	display: block;
+	clear: both;
+	text-align: left;
+	width: 100%;
+	color:black;
+	font-family: Helvetica;
+	font-weight: bold;
+}
+#form form{
+	padding-left: 3%;
+	
+}
+#leftform{
+	float:left;
+	width: 30%;
+	margin-top: -240px;
+}
+
+input[type=text],input[type=tel], select {
+    width: 130%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left;
+    box-shadow:  1px 1px 1px 1px #A2A5A4;
+}
+
+#form p{
+	width: 100%;
+	float: right;
+	text-align: left;
+	font-family: Helvetica;
+	font-weight: bold;
+	padding-bottom: 10px;
+	padding-left: 1%;
+	padding-top: 20px;
+}
+#form #msg{
+	width: 50%;
+	float: right;
+	text-align: left;
+	font-family: Helvetica;
+	font-weight: bold;
+	padding-bottom: 10px;
+	padding-left: 1%;
+	padding-top: 30px;
+}
+
+input[type=radio], select{
+	width: 3%;
+	display: inline-block;
+	text-align: left;
+	float: left;
+	margin-left:5px;
+
+}
+#radio{
+	width: 50%;
+	clear: both;
+	float: right;
+	
+}
+#radio label{
+	width: 90%;
+	text-align: left;
+	font-weight: normal;
+	color:#A2A5A4;
+	padding-left: 3%;
+	display: inline-block;
+	padding-bottom: 10px;
+}
+
+textarea {
+    width: 50%;
+    float: right;
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    box-shadow:  1px 1px 1px 1px #A2A5A4;
+}
+#submit{
+	padding-top: 460px;
+
+}
+input[type=submit] {
+    display: inline;
+	clear: both;
+    background-color: #4D0013;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  	width:20%;
+}
+
+input[type=submit]:hover {
+    background-color: #A2A5A4;
+}
+
+
+#about{
+    background-color: #F2F0E3;
+    padding-top:1%;
+    padding-right: 2%; 
+    padding-left:2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+	
+}
+
+#about h1{
+    font-family: Helvetica;
+    font-size: 4em;
+    color: #4D0013;
+    text-align: left;
+    border-bottom: solid 1px #A2A5A4;
+    padding-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;font-family: Helvetica;
+	
+}
+#text p{
+    font-family: "Helvetica Neue Light";
+    font-size: 1.4em;
+    color: #95989A;
+    text-align: left;
+    padding-left: 2%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+#headlines{
+    padding-left: 2%;
+    padding-bottom: 5%;
+    padding-right: 2%
+    padding-top 5%;
+
+}
+
+#feat{
+	margin-bottom: 20px;
+}
+#headlines h2{
+    text-align: left;
+    font-family: Helvetica;
+    font-size: 2.5em;
+    color: #4D0013;
+    border-bottom: solid 1px #A2A5A4;
+    margin-right: 2%;
+
+}
+#headlines h3{
+    font-family: Helvetica;
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    width: 50%;
+    line-height: 40px;    
+
+}
+#headlines a{
+    text-decoration: none;
+    font-size: 1.5em;
+    float: left;
+    font-family: "Helvetica Neue Light";
+    color: #95989B;
+    padding-bottom: 10px;
+}
+#headlines a:hover{
+    color: #4D0013;
+    text-decoration: underline;
+    font-size: 1.5em;
+
+}
+
+
+
+						/*FOOTER*/
+.footer {
+	display: block;
+	clear: both;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 2rem;
+	background-color: #4D0013;
+	font-size: 1em;
+	break-before: all;
+	font-family: "Helvetica Neue";
+	line-height: 1.4;
+}
+#footer-left{
+    float: left;
+    color: white;
+    padding-top: 20px;
+    text-align: left;
+    margin-left: 1%;
+}
+#footer-right{
+    float: right;
+    color: white;
+    padding: 13px 10px 7px 0px;
+    text-align: right;
+}
+#footer-center{
+    display: center;
+    text-align: center;
+    color: white;
+    padding-top: 55px;
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+a{
+    color: inherit;
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+	
+	.overlay {
+    visibility: initial;
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+
+span{
+	visibility: initial;
+}
+
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+	#nav figure{
+		display: block;
+	}
+	header #nav{
+	padding-bottom: 0;
+	}
+	#nav{
+		padding: 0;
+	}
+	#icons li a img{
+	}
+	#top{
+		margin-top: 0;
+	}
+	figure img{
+		float:left;
+		width: 72px;
+		height:80px;
+		padding-left: 2em;
+		padding-top: 10px;
+	}
+	figcaption{
+		display:block;
+	}
+	figcaption p.smGray{
+		font-family: "Helvetica Neue Light";
+		padding-top: 67px;
+		margin-left: 115px;
+		padding-left: .5em;
+		color: #95989A;
+		font-size: 1.3em;
+		font-weight: 900;
+		text-align: left;
+		letter-spacing: 1px;
+	}
+	figcaption p.bigBurg{
+		margin-left: 115px;
+		color: #4D0013;
+		font-size: 2em;
+		padding-left: .3em;
+		font-family: "Helvetica Neue Bold";
+		font-weight: 900;
+		text-align: left;
+	}
+	#containall{
+		background-color: #FBF9ED;
+		border-top:.5px solid #A2A5A4;
+		margin-top: 1.2em;
+		width:100%;
+
+	}
+	#bars {
+	    display: inline-block;
+	    cursor: pointer;
+	    padding-top: .4em;
+	    margin-bottom: .4em;
+		border-width: 100%;
+	}
+	.bar1, .bar2, .bar3 {
+	    width: 35px;
+	    height: 5px;
+	    background-color: #333;
+	    margin: 6px 0;
+	    transition: 0.4s;
+	}
+	/* Rotate first bar */
+	.change .bar1 {
+	    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+	    transform: rotate(-45deg) translate(-9px, 6px) ;
+	}
+	/* Fade out the second bar */
+	.change .bar2 {
+	    opacity: 0;
+	}
+	/* Rotate last bar */
+	.change .bar3 {
+	    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+	    transform: rotate(45deg) translate(-8px, -8px) ;
+	}
+	#nav ul{
+		display:none;
+	}
+	#top{
+		
+		height: 83vw;
+	}
+	#context{
+		float: right;
+		text-align: center;
+		width: 100%;
+		color: white;
+		margin:0;
+		padding: 0; 
+		padding-right: .1em;
+		font-size: .55em;
+	}
+	#top h1{
+		font-family: "bodoni seventytwo";
+		font-size: 5em;
+		font-weight: lighter;
+		padding: 
+	}
+	#top p{
+		font-family: "Helvetica";
+		font-weight: lighter;
+		font-size: 1.5em;
+		padding-top: 15px;	
+		line-height: 1.3em;
+}
+	.footer {
+	  position: relative;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  padding: .8rem;
+	  background-color: #4D0013;
+	  font-family: "helvetica";
+	  font-size: .6em;
+	}
+	#footer-left{
+	    float: left;
+	    color: white;
+	    padding: 0;
+	    margin-top: -5px;
+	    text-align: left;
+	    margin-left: 1%;
+	}
+	#footer-right{
+	    float: right;
+	    color: white;
+	    padding: 0;
+	    margin-top: -5px;
+	    text-align: right;
+	}
+	#footer-center{
+	    display: center;
+	    text-align: center;
+	    color: white;
+	    padding-top: 50px;
+	    line-height: 1.2em;
+	    font-size: 1.2em;
+	}
+	a{
+	    color: inherit;
+	}
+}
+
+/* ----------- iPhone 6 ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+	#socialmedia{
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
+	#nav figure{
+		display: block;
+		margin-bottom: .1em;
+	}
+	#icons li a img{
+	}
+	figure img{
+	float:left;
+	width: 81px;
+	height:90px;
+	padding-left: 3em;
+	padding-top: 20px;
+	}
+	figcaption p.smGray{
+	font-family: "Helvetica Neue Light";
+	padding-top: 80px;
+	margin-left: 120px;
+	padding-left: 1.4em;
+	color: #95989A;
+	font-size: 1.3em;
+	font-weight: 900;
+	text-align: left;
+	letter-spacing: 1px;
+	}
+	figcaption p.bigBurg{
+	margin-left: 120px;
+	color: #4D0013;
+	font-size: 2em;
+	padding-left: .9em;
+	font-family: "Helvetica Neue Bold";
+	font-weight: 900;
+	text-align: left;
+	}
+	#containall{
+		background-color: #FBF9ED;
+		border-top:.5px solid #A2A5A4;
+		margin-top: 2em;
+		width:100%;
+		position: fixed;
+
+	}
+	#bars {
+	    display: inline-block;
+	    cursor: pointer;
+	    padding-top: 1em;
+	    margin-bottom: 1em;
+		border-width: 100%;
+	}
+	.bar1, .bar2, .bar3 {
+	    width: 35px;
+	    height: 5px;
+	    background-color: #333;
+	    margin: 6px 0;
+	    transition: 0.4s;
+	}
+	/* Rotate first bar */
+	.change .bar1 {
+	    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+	    transform: rotate(-45deg) translate(-9px, 6px) ;
+	}
+	/* Fade out the second bar */
+	.change .bar2 {
+	    opacity: 0;
+	}
+	/* Rotate last bar */
+	.change .bar3 {
+	    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+	    transform: rotate(45deg) translate(-8px, -8px) ;
+	}
+	#nav ul{
+		display:none;
+	}
+	#top{
+		margin-top:77px;
+		height: 90vw;
+	}
+	#context{
+		float: right;
+		text-align: center;
+		width: 100%;
+		color: white;
+		margin:0;
+		padding: 0;
+		padding-top: 35px; 
+		padding-right: .1em;
+		font-size: .6em;
+	}
+	#top h1{
+		font-family: "bodoni seventytwo";
+		font-size: 5em;
+		font-weight: lighter;
+	}
+	#top p{
+		font-family: "Helvetica";
+		font-weight: lighter;
+		font-size: 1.5em;
+		padding-top: 20px;	
+		line-height: 1.3em;
+}
+	.footer {
+		position: relative;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  padding: .8rem;
+	  background-color: #4D0013;
+	  font-family: "helvetica";
+	  font-size: .6em;
+	}
+	#footer-left{
+	    float: left;
+	    color: white;
+	    padding: 0;
+	    margin-top: -2px;
+	    text-align: left;
+	    margin-left: 1%;
+	}
+	#footer-right{
+	    float: right;
+	    color: white;
+	    padding: 0;
+	    margin-top: -5px;
+	    text-align: right;
+	}
+	#footer-center{
+	    display: center;
+	    text-align: center;
+	    color: white;
+	    padding-top: 55px;
+	    line-height: 1.2em;
+	    font-size: 1.2em;
+	}
+	a{
+	    color: inherit;
+	}
+}
+
+/* ----------- iPhone 6+ ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+	#socialmedia{
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
+	#nav figure{
+		display: block;
+		margin-bottom: .1em;
+		padding-bottom: 40px;
+	}
+	#icons li a img{
+	}
+
+	#nav figure img{
+	float:left;
+	width: 111px;
+	height:120px;
+	margin-left:0px;
+	margin-top: 30px;
+	padding-left: 10%;
+	}
+
+	#nav figcaption p.smGray{
+	font-family: "Helvetica Neue Light";
+	padding-top: 120px;
+	margin-left: 140px;
+	color: #95989A;
+	font-size: 1.7em;
+	font-weight: 900;
+	text-align: left;
+	letter-spacing: 1px;
+	}
+	#nav figcaption p.bigBurg{
+	margin-left: 140px;
+	color: #4D0013;
+	font-size: 2.5em;
+	padding-left: .9em;
+	font-family: "Helvetica Neue Bold";
+	font-weight: 900;
+	text-align: left;
+	}
+	span{
+
+	}
+	#containall{
+		background-color: #FBF9ED;
+		border-top:.5px solid #A2A5A4;
+		margin-top: 2em;
+		width:100%;
+		position: fixed;
+
+	}
+	#bars {
+	    display: inline-block;
+	    cursor: pointer;
+	    padding-top: 1em;
+	    margin-bottom: 1em;
+		border-width: 100%;
+	}
+	.bar1, .bar2, .bar3 {
+	    width: 35px;
+	    height: 5px;
+	    background-color: #333;
+	    margin: 6px 0;
+	    transition: 0.4s;
+	}
+	/* Rotate first bar */
+	.change .bar1 {
+	    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+	    transform: rotate(-45deg) translate(-9px, 6px) ;
+	}
+	/* Fade out the second bar */
+	.change .bar2 {
+	    opacity: 0;
+	}
+	/* Rotate last bar */
+	.change .bar3 {
+	    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+	    transform: rotate(45deg) translate(-8px, -8px) ;
+	}
+	#nav ul{
+		display:none;
+	}
+	#top{
+		margin-top:9px;
+		height: 90vw;
+	}
+	#context{
+		float: right;
+		text-align: center;
+		width: 100%;
+		color: white;
+		margin:0;
+		padding: 0;
+		padding-top: 35px; 
+		padding-right: .1em;
+		font-size: .6em;
+	}
+	#top h1{
+		font-family: "bodoni seventytwo";
+		font-size: 5em;
+		font-weight: lighter;
+	}
+	#top p{
+		font-family: "Helvetica";
+		font-weight: lighter;
+		font-size: 1.5em;
+		padding-top: 20px;	
+		line-height: 1.3em;
+}
+	.footer {
+		position: relative;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  padding: .8rem;
+	  background-color: #4D0013;
+	  font-family: "helvetica";
+	  font-size: .6em;
+	}
+	#footer-left{
+	    float: left;
+	    color: white;
+	    padding: 0;
+	    margin-top: -2px;
+	    text-align: left;
+	    margin-left: 1%;
+	}
+	#footer-right{
+	    float: right;
+	    color: white;
+	    padding: 0;
+	    margin-top: -5px;
+	    text-align: right;
+	}
+	#footer-center{
+	    display: center;
+	    text-align: center;
+	    color: white;
+	    padding-top: 70px;
+	    line-height: 1.2em;
+	    font-size: 1.1em;
+	}
+	a{
+	    color: inherit;
+	}
+#form{
+	width: 80%;
+	margin:30px 10% 30px 10%;
+	height: 700px;
+	text-align: center;
+	border-radius: 5px;
+    background-color: #F2F0E3;
+    padding: 20px;
+}
+#submit{
+	padding-top: 500px;
+	text-align: center;
+
+}
+input[type=submit] {
+    display: inline;
+	clear: both;
+    background-color: #4D0013;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    padding-right: 50px;
+    border-radius: 4px;
+    cursor: pointer;
+  	width:20%;
+}
+
+input[type=submit]:hover {
+    background-color: #A2A5A4;
+}
+
+}
+
+/* ----------- Galaxy S5 ----------- */
+/* Portrait */
+ @media screen
+ and (device-width: 360px)
+ and (device-height: 640px)
+ and (-webkit-device-pixel-ratio: 3)
+ and (orientation: portrait) {
+    #socialmedia{
+        padding-left: 5px;
+        padding-bottom: 10px;
+        margin: 0;
+        text-align: center;
+    }
+    figure img{
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    width: 91px;
+    height: 100px;
+    }
+    figcaption p.smGray{
+    font-family: “Helvetica Neue Light”;
+    padding-top: 70px;
+    margin-left: 100px;
+    padding-left: 1.4em;
+    color: #95989A ;
+    font-size: 1.3em;
+    font-weight: 900;
+    text-align: left;
+    letter-spacing: 1px;
+
+    }
+    figcaption p.bigBurg{
+    margin-left: 120px;
+    color: #4D0013 ;
+    font-size: 2em;
+    padding-left: .4em;
+    font-family: “Helvetica Neue Bold”;
+    font-weight: 900;
+    text-align: left;
+    }
+    #containall{
+        background-color: #FBF9ED ;
+        border-top: 1px solid #A2A5A4 ;
+        margin-top: 2em;
+        width:100%;
+        position: fixed;
+
+    }
+    #bars {
+        display: inline-block;
+        cursor: pointer;
+        padding-top: 1em;
+        margin-bottom: 1em;
+        border-width: 100%;
+    }
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    /* Rotate first bar */
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+        transform: rotate(-45deg) translate(-9px, 6px) ;
+    }
+
+    /* Fade out the second bar */
+    .change .bar2 {
+        opacity: 0;
+    }
+    /* Rotate last bar */
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+        transform: rotate(45deg) translate(-8px, -8px) ;
+    }
+    #nav ul{
+        display:none;
+    }
+    #top{
+        margin-top:80px;
+        height: 90vw;
+    }
+    #context{
+        float: right;
+        text-align: center;
+        width: 100%;
+        color: white;
+        margin:0;
+        padding: 0;
+        padding-top: 35px;
+        padding-right: .1em;
+        font-size: .6em;
+    }
+    #top h1{
+        font-family: “bodoni seventytwo”;
+        font-size: 5em;
+        font-weight: lighter;
+    }
+    #top p{
+        font-family: “Helvetica”;
+        font-weight: lighter;
+        font-size: 1.5em;
+        padding-top: 20px;    
+        line-height: 1.3em;
+	}
+    .footer {
+      position: relative;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: .8rem;
+      background-color: #4D0013 ;
+      font-family: “helvetica”;
+      font-size: .6em;
+    }
+    #footer-left{
+        float: left;
+        color: white;
+        padding: 0;
+        margin-top: -5px;
+        text-align: left;
+        margin-left: 1%;
+    }
+    #footer-right{
+        float: right;
+        color: white;
+        padding: 0;
+        margin-top: -5px;
+        text-align: right;
+    }
+    #footer-center{
+        display: center;
+        text-align: center;
+        color: white;
+        padding-top: 55px;
+        line-height: 1.2em;
+        font-size: 1.2em;
+    }
+    a{
+        color: inherit;
+    }
+}
+
+/* ----------- iPad 3 and 4 ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+	nav{
+		padding-top: 20px;
+		padding-bottom: 15px;
+		font-size: 1.3em;
+	}
+	#top{
+		height: 400px;
+	}
+
+	#context{
+		padding-top: 30px;
+		font-size: 1.07em;
+		text-align: center;
+		width: 95%;
+		margin-right: 3%;
+		text-shadow: 2px 1px 1px black;
+		
+	}
+
+	#footer-left{
+		margin-top: -25px;
+	}
+	#footer-right{
+		margin-top: -25px;
+	}
+	#footer-center{
+		font-size: 1.1em;
+		margin-bottom: -15px;
+		padding-top: 100px;
+
+	}
+
+
+}

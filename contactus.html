@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	    <title>Contact Us</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	    <meta name="keywords" content="Monuments Stones Vases Grave" />
+	    <meta name="description" content="Effie site" />
+	    <meta charset="UTF-8" />
+	    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	</head>
+								<!-- END OF HEAD  -->
+	<body>
+		<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contactus.html">Contact Us</a>
+  </div>
+</div>
+							<!-- Icons for Social Media  -->
+	<div id="socialmedia">
+		
+		<ul id="icons">
+		
+			<li><a target="phone" title="phone" href="tel:6467062379"><img id="phone" alt="call" src="images/icons/call.png"></a></li>
+
+			<li><a target="email" title="email" href="mailto:test@gmail.com"><img id="email" alt="email" src="images/icons/email.png"></a></li>
+
+			<li><a target="yelp" title="yelp" href="https://www.yelp.com/biz/monuments-by-effie-inc-new-york"><img id="yelp" alt="yelp" src="images/icons/yelp.png"></a></li>
+
+			<li><a target="twit" title="twitter" href="http://twitter.com"><img id="twit" alt="twitter" src="images/icons/twitter.png"></a></li>
+
+			<li><a target="ig" title="instagram" href="http://instagram.com"><img id="ig" alt="instagram" src="images/icons/instagram_button.png"></a></li>
+
+			<li><a target="fb" title="facebook" href="http://facebook.com"><img id="fb" alt="facebook" src="images/icons/fb_button.png"></a></li>	
+		</ul>
+	</div>
+							<!-- HEADER:  LOGO \-/ SITENAME \-/ NAVBAR \-/ BURGER MOBILE -->
+	<header id="nav">
+	<figure>
+		<img src="images/icons/logo.png"/>
+		<figcaption>
+			<p class=smGray>Monuments by</p>
+			<p class=bigBurg>EFFIE, INC.</p>
+		</figcaption>
+	</figure>
+		<nav class="menu">
+			<ul>
+	            <li><a href="index.html">HOME</a></li>
+	            <li><a href="aboutus.html">ABOUT US</a></li>
+	            <li><a href="services.html">SERVICES</a></li>
+	            <li>
+	            	<a href="#">GALLERY<span class="arrow">&#9660;</span></a>
+					<ul class="sub-menu">
+						<li><a href="headstones.html">HEADSTONES</a></li>
+						<li><a href="gallery.html">GRANITE COLORS</a></li>
+						<li><a href="bronzemarker.html">BRONZE MARKERS</a></li>
+						<li><a href="flat-markers.html">FLAT MARKERS</a></li>
+						<li><a href="benches.html">BENCHES</a></li>
+						<li><a href="photo-tiles.html">PHOTO TILES</a></li>
+					</ul>
+	        	</li>
+	            <li><a href="contactus.html">CONTACT US</a></li>
+	        </ul>
+		</nav>
+
+						<!-- MENU/BURGER BAR FOR MOBILE  -->
+		        <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+</script>
+	</header>
+
+	<main>
+								<!-- TOP PORTION -->
+		<section id = "top">
+								<!-- CONTEXT:-  HOLDS MAIN-TEXT \-/ BACKGROUND-PHOTO -->
+			<section id="context">
+				<h1>CONTACT US</h1>
+			</section>
+		</section>
+
+		<div id = "form">
+			<h1 id="formheader">Contact Us</h1>
+
+			<form action="/action_page.php">
+			<p id="msg">Message<sup style="color:red; font-size: 1em;">*</sup>:</p>
+			<textarea id="textbox" placeholder="enter message..."></textarea>
+			<div id="radio">
+			<p>Reason for Callback<sup style="color:red; font-size: 1em;">*</sup>:</p>
+			
+			<input type="radio" name="reason" value="quoterequest" checked> 
+			<label>Quote Request</label>
+			<input type="radio" name="reason" value="productquestions">
+			<label>Product Questions</label>
+			<input type="radio" name="reason" value="servicerequest">
+			<label>Service Request</label>
+			<input type="radio" name="reason" value="generalinquiry">
+			<label>General Inquiry</label>
+			</div>
+
+			<div id="leftform">
+    		<label id="form1" for="fname">First Name<sup style="color:red; font-size: 1em;">*</sup>:</label>
+   			<input type="text" id="fname" name="firstname" placeholder="enter first name">
+
+   			<label for="lname">Last Name<sup style="color:red; font-size: 1em;">*</sup>:</label>
+    		<input type="text" id="lname" name="lastname" placeholder="enter last name">
+
+    		<label for="em">Email<sup style="color:red; font-size: 1em;">*</sup>:</label>
+    		<input type="text" id="em" name="email" placeholder="enter email">
+
+    		<label for="phone1">Phone Number<sup style="color:red; font-size: 1em;">*</sup>:</label>
+    		<input type="tel" id="phone1" name="mainphone"  placeholder="enter phone number">
+
+    		<label for="phone2">Alternative Phone Number</sup>:</label>
+    		<input type="tel" id="phone2" name="altphone" placeholder="enter phone number">
+    		</div>
+			<div id="submit">
+    		<input type="submit" value="Submit">
+    		</div>
+    	
+    		
+    	</form>
+		</div>
+
+	</main>
+
+		<footer class="footer">
+							<!-- \-/ LEFT FOOTER \-/ PHONE\-/GMAIL-->
+		<div id="footer-left">
+        <p>Questions? Contact us!</p>
+        
+        <p>You can always reach us</p>
+
+        <p>at <a href="tel:917-702-9251">917-702-9251</a> or via email</p>
+
+        <p> <a href="mailto:floresv.alex@gmail.com">monumentsbyeffie@gmail.com</a></p>
+        </div>
+							<!-- \-/ RIGHT FOOTER \-/ SOCIAL LINKS-->
+        <div id="footer-right">
+        <p><b>Find Us on Social Media!</b></p>
+        
+        <p>Like us on <a href="https://www.facebook.com/headstonenyc/" target="_blank">Facebook</a></p>
+
+        <p>Tweet us on <a href="https://www.twitter.com" target="_blank">Twitter</a></p>
+
+        <p>Follow us on <a href="https://www.instagram.com" target="_blank">Instagram</a></p>
+
+        <p>Rate us on <a href="https://www.yelp.com/biz/monuments-by-effie-inc-new-york" target="_blank">Yelp</a></p>
+        </div>
+        					<!-- \-/ CENTER FOOTER \-/ ADDRESS -->
+        <div id="footer-center">
+        <p>2240 1st Avenue, New York, NY 10029</p>
+
+        <p>Copyright © Monuments by Effie, Inc.</p>
+        </div>
+	</footer>
+</body>
+</html>
